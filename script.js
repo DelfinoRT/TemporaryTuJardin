@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createLeaf() {
         const leaf = document.createElement('div');
         leaf.textContent = '🍂';
-        leaf.classList.add('star');
+        leaf.classList.add('leaf');
         document.body.appendChild(leaf);
 
         leaf.style.left = Math.random() * window.innerWidth + 'px';
@@ -440,4 +440,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const backButton = document.getElementById("back-button");
+    if (backButton) {
+        backButton.addEventListener("click", function() {
+            window.location.href = "problemas.html";
+        });
+    }
+})
