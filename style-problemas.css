@@ -68,6 +68,10 @@ main {
 #problem-button-container {
     margin-top: 2em;
     margin-bottom: 2em;
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Keep the wrapping behavior */
+    gap: 10px;
 }
 
 #problem-button-container button.select-issue {
@@ -83,6 +87,10 @@ main {
     white-space: nowrap; /* Prevent text from wrapping unnecessarily */
     width: 300px;
     min-height: auto; /* Adjust height as needed */
+}
+
+#problem-button-container button.select-issue.selected {
+    background-color: #566b28; /* The darker green shade */
 }
 
 #problem-button-container button.select-issue:hover {
